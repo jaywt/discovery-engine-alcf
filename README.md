@@ -4,7 +4,7 @@ The Genesis Mission Hackathon F4 hands-on (Discovery Engine + xCard Registry) ru
 compute node with unprivileged Apptainer, submitted through the ALCF IRI API, registering a data card
 for the EMMA benchmark.
 
-**Read the page:** https://jaywt.github.io/discovery-engine-alcf/ (source: [`index.md`](index.md)).
+**Read the page:** https://jaywen.com/discovery-engine-alcf/ (source: [`index.md`](index.md)).
 
 | Path | What |
 |---|---|
