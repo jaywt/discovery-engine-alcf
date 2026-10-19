@@ -1,0 +1,11 @@
+node: x3009c0s19b0n0
+date: 2026-10-16T17:08:07+00:00
+job: 7754425
+apptainer: apptainer version 1.4.1
+repo: AI-ModCon/discovery-local@f88a6097f3cddca84aa57d6f44edd0b5d5039ab1
+image s3: docker.io/adobe/s3mock@sha256:9da9c179bc0d1cb6986a40fd7ffbbc6deee11522b3892217ca350d65596126fa
+image opensearch: public.ecr.aws/opensearchproject/opensearch@sha256:1193b7c29c5d63028523728243cc4da047ac49f697a8f8105e5aeee2f89bcc4c
+image registry: ghcr.io/ai-modcon/xcard-registry@sha256:e5703b8bb0fca6126c2180799036ce1ba8292c2d8279b45d5a3c5fa96a8ebe00
+image api: ghcr.io/ai-modcon/genesis-discovery-api@sha256:c568b3ea3379956b4167df2338c5c4a71e702eb4acb26889f61c0438dfb15452
+image ui: ghcr.io/ai-modcon/genesis-discovery-ui@sha256:75080eda8f25b68667994d15f91954915ab945c98de66df25d02fcc64cc70556
+card: emma.xcard.md sha256 12a0dab14345a6c75bd06adf0f9074c52a4eb3f762350f36566f8ca4b350613f

@@ -1,0 +1,17 @@
+{
+ "note": "Trimmed for publication: counts only. The full listing is other teams' cards from the unlicensed discovery-local corpus.",
+ "total": 324,
+ "by_card_type": {
+  "agent": 127,
+  "dataset": 1,
+  "hackathon_materials": 2,
+  "infrastructure": 18,
+  "model": 176
+ },
+ "by_sensitivity": {
+  "general": 283,
+  "reviewed": 10,
+  "unknown": 31
+ },
+ "emma_benchmark_present": false
+}

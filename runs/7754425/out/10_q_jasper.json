@@ -1,0 +1,23 @@
+{
+ "query": "hyperspectral unmixing benchmark Jasper Ridge",
+ "results": [
+  {
+   "card_id": "emma-benchmark",
+   "title": "EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures",
+   "card_type": "dataset",
+   "relevance_score": 1.0,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "APOLLO-xcard",
+   "title": "APOLLO \u2014 spine v0.1",
+   "card_type": "agent",
+   "relevance_score": 0.5396689,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 2,
+ "strategy_used": "hybrid",
+ "provenance_id": "6d310566-942c-4832-94d6-dae806aac521",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

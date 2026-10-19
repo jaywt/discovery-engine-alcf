@@ -1,0 +1,16 @@
+{
+ "query": "unsupervised end-member extraction from geoscience mixtures",
+ "results": [
+  {
+   "card_id": "emma-benchmark",
+   "title": "EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures",
+   "card_type": "dataset",
+   "relevance_score": 1.0,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 1,
+ "strategy_used": "semantic_only",
+ "provenance_id": "ad71ddc2-e1f5-40b1-893e-642304122871",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

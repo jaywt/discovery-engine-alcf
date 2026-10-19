@@ -1,0 +1,35 @@
+cards before: 324 {'agent': 127, 'dataset': 1, 'hackathon_materials': 2, 'infrastructure': 18, 'model': 176}
+cards after:  325 {'agent': 127, 'dataset': 2, 'hackathon_materials': 2, 'infrastructure': 18, 'model': 176}
+emma in before: False  after: True
+register HTTP 201 {"id": "5c5aeb72-8835-4cad-becd-9b246520a55e", "xcard_type": "data_card", "version": 1, "content_type": "text/vnd.genesis.data-card+markdown", "created_at": "2026-10-16T17:08:13.259256Z", "updated_at": "2026-10-16T17:08:13.259256Z"}
+resync {"status": "ok", "source": "registry", "cards_loaded": 326, "cards_pruned": 0, "note": ""}
+engine GET /cards/emma-benchmark HTTP 200 {'id': 'emma-benchmark', 'title': 'EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures', 'card_type': 'dataset', 'sensitivity': 'general', 'last_updated': '2026-10-16'} relationships: 19
+registry GET HTTP 200
+03_search_before_hybrid.json: total_found=10 strategy=hybrid
+    0.735 semantic  PISCES_Extraction_Agent-xcard  PISCES Extraction Agent — spine v0.1
+    0.589 semantic  model-card_DAEforhydro-xcard  DAE-featured-ET-Prediction Model — spine v0.1
+    0.500 semantic  STA-model-card-xcard  Subsurface Trend Analysis (STA) — spine v0.1
+    0.500 semantic  mist-mixtures-zffffbex-xcard  MIST — Mixtures (Excess Properties) — spine v0.1
+    0.402 semantic  LabOrSite_NDSR_Model-Card-xcard  NDSR — spine v0.1
+09_search_after_graph.json: total_found=0 strategy=graph_only
+    {"query": "unsupervised end-member extraction from geoscience mixtures", "results": [], "total_found": 0, "strategy_used": "graph_only", "provenance_id": "34a36a28-0f13-476b-a12e-04b8ddec4056"}
+09_search_after_hybrid.json: total_found=1 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+09_search_after_semantic.json: total_found=1 strategy=semantic_only
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+10_q_agenda.json: total_found=2 strategy=hybrid
+    1.000 semantic  genesis-hackathon-agenda-2026  Genesis Mission Hackathon Agenda, 14-16 October 2026
+    0.806 semantic  genesis-hackathon-welcome-packet-2026  Genesis Mission Hackathon Welcome Packet, 14-16 October 2026
+10_q_archetypal.json: total_found=4 strategy=hybrid
+    0.500 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.500 semantic  MLIR_Affine_Annotator-xcard  MLIR Affine Annotator — spine v0.1
+    0.183 semantic  GCA-AI__Graphical_Contingency_Analysis_with_AI_-xcard  GCA-AI (Graphical Contingency Analysis with AI) — spine v0.1
+    0.166 semantic  Accelerate_Analyzer_Agent-xcard  Accelerate Analyzer Agent — spine v0.1
+10_q_jasper.json: total_found=2 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.540 semantic  APOLLO-xcard  APOLLO — spine v0.1
+10_q_nazca.json: total_found=2 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.345 semantic  model-card_AI4GSD_PNNLRCSFA_YC-xcard  $ {AI4GSD} — spine v0.1
+10_q_panola.json: total_found=1 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix

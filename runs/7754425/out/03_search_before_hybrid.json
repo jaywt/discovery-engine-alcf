@@ -1,0 +1,44 @@
+{
+ "query": "unsupervised end-member extraction from geoscience mixtures",
+ "results": [
+  {
+   "card_id": "PISCES_Extraction_Agent-xcard",
+   "title": "PISCES Extraction Agent \u2014 spine v0.1",
+   "card_type": "agent",
+   "relevance_score": 0.7354367,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "model-card_DAEforhydro-xcard",
+   "title": "DAE-featured-ET-Prediction Model \u2014 spine v0.1",
+   "card_type": "model",
+   "relevance_score": 0.5891673,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "STA-model-card-xcard",
+   "title": "Subsurface Trend Analysis (STA) \u2014 spine v0.1",
+   "card_type": "model",
+   "relevance_score": 0.5,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "mist-mixtures-zffffbex-xcard",
+   "title": "MIST \u2014 Mixtures (Excess Properties) \u2014 spine v0.1",
+   "card_type": "model",
+   "relevance_score": 0.5,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "LabOrSite_NDSR_Model-Card-xcard",
+   "title": "NDSR \u2014 spine v0.1",
+   "card_type": "model",
+   "relevance_score": 0.40215635,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 10,
+ "strategy_used": "hybrid",
+ "provenance_id": "4012a8ae-3d38-482a-a423-05b9cb145831",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

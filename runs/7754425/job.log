@@ -1,0 +1,77 @@
+dle_handson.sh: OK
+dle_lib.sh: OK
+dle_up.sh: OK
+emma.xcard.md: OK
+[17:06:02 +2s] host x3009c0s19b0n0 job 7754425 apptainer version 1.4.1 cores 64 mem 503G
+[17:06:02 +2s] image s3: pulling docker.io/adobe/s3mock@sha256:9da9c179bc0d1cb6986a40fd7ffbbc6deee11522b3892217ca350d65596126fa
+[17:06:06 +6s] image opensearch: pulling public.ecr.aws/opensearchproject/opensearch@sha256:1193b7c29c5d63028523728243cc4da047ac49f697a8f8105e5aeee2f89bcc4c
+[17:06:31 +31s] image registry: pulling ghcr.io/ai-modcon/xcard-registry@sha256:e5703b8bb0fca6126c2180799036ce1ba8292c2d8279b45d5a3c5fa96a8ebe00
+[17:06:46 +46s] image api: pulling ghcr.io/ai-modcon/genesis-discovery-api@sha256:c568b3ea3379956b4167df2338c5c4a71e702eb4acb26889f61c0438dfb15452
+[17:07:12 +72s] image ui: pulling ghcr.io/ai-modcon/genesis-discovery-ui@sha256:75080eda8f25b68667994d15f91954915ab945c98de66df25d02fcc64cc70556
+-rwxr-xr-x 1 jaywen users 473239552 Oct 16 17:07 /home/jaywen/discovery-local/sif/api.sif
+-rwxr-xr-x 1 jaywen users 854388736 Oct 16 17:06 /home/jaywen/discovery-local/sif/opensearch.sif
+-rwxr-xr-x 1 jaywen users 113860608 Oct 16 17:06 /home/jaywen/discovery-local/sif/registry.sif
+-rwxr-xr-x 1 jaywen users  78110720 Oct 16 17:06 /home/jaywen/discovery-local/sif/s3.sif
+-rwxr-xr-x 1 jaywen users  25792512 Oct 16 17:07 /home/jaywen/discovery-local/sif/ui.sif
+[17:07:15 +75s] opensearch: unpacking sandbox
+[17:07:19 +79s] repo at f88a609 2026-10-14 Say where a card is actually written, and that the assistant does not write one
+[17:07:19 +79s] started s3 (pid 1852500)
+[17:07:19 +79s] started opensearch (pid 1852503)
+[17:07:26 +86s] s3 ready (http://127.0.0.1:9090/)
+[17:07:26 +86s] started registry (pid 1852977)
+[17:07:32 +92s] registry ready (http://127.0.0.1:18100/readyz)
+[17:07:32 +92s] seed: corpus through the registry, then the hackathon documents
+seeded 323/330 cards into http://127.0.0.1:18100
+  skipped, no registry subtype: {'framework': 4, 'workflow': 1}
+  failed: 2
+wrote 2 cards; resync the engine to index them
+[17:07:39 +99s] opensearch ready (http://127.0.0.1:9200/_cluster/health)
+[17:07:39 +99s] started api (pid 1853461)
+[17:08:04 +124s] api ready (http://127.0.0.1:18000/health)
+[17:08:04 +124s] started ui (pid 1853937)
+[17:08:07 +127s] ui ready (http://127.0.0.1:15173/)
+[17:08:07 +127s] stack up on x3009c0s19b0n0
+[17:08:12 +132s] engine serves 324 cards before registration
+[17:08:13 +133s] register emma.xcard.md as data_card
+[17:08:13 +133s] registry answered HTTP 201: {"id":"5c5aeb72-8835-4cad-becd-9b246520a55e","xcard_type":"data_card","version":1,"content_type":"text/vnd.genesis.data-card+markdown","created_at":"2026-10-16T17:08:13.259256Z","updated_at":"2026-10-16T17:08:13.259256Z"}
+[17:08:28 +148s] resync: {"status":"ok","source":"registry","cards_loaded":326,"cards_pruned":0,"note":""}
+cards before: 324 {'agent': 127, 'dataset': 1, 'hackathon_materials': 2, 'infrastructure': 18, 'model': 176}
+cards after:  325 {'agent': 127, 'dataset': 2, 'hackathon_materials': 2, 'infrastructure': 18, 'model': 176}
+emma in before: False  after: True
+register HTTP 201 {"id": "5c5aeb72-8835-4cad-becd-9b246520a55e", "xcard_type": "data_card", "version": 1, "content_type": "text/vnd.genesis.data-card+markdown", "created_at": "2026-10-16T17:08:13.259256Z", "updated_at": "2026-10-16T17:08:13.259256Z"}
+resync {"status": "ok", "source": "registry", "cards_loaded": 326, "cards_pruned": 0, "note": ""}
+engine GET /cards/emma-benchmark HTTP 200 {'id': 'emma-benchmark', 'title': 'EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures', 'card_type': 'dataset', 'sensitivity': 'general', 'last_updated': '2026-10-16'} relationships: 19
+registry GET HTTP 200
+03_search_before_hybrid.json: total_found=10 strategy=hybrid
+    0.735 semantic  PISCES_Extraction_Agent-xcard  PISCES Extraction Agent — spine v0.1
+    0.589 semantic  model-card_DAEforhydro-xcard  DAE-featured-ET-Prediction Model — spine v0.1
+    0.500 semantic  STA-model-card-xcard  Subsurface Trend Analysis (STA) — spine v0.1
+    0.500 semantic  mist-mixtures-zffffbex-xcard  MIST — Mixtures (Excess Properties) — spine v0.1
+    0.402 semantic  LabOrSite_NDSR_Model-Card-xcard  NDSR — spine v0.1
+09_search_after_graph.json: total_found=0 strategy=graph_only
+    {"query": "unsupervised end-member extraction from geoscience mixtures", "results": [], "total_found": 0, "strategy_used": "graph_only", "provenance_id": "34a36a28-0f13-476b-a12e-04b8ddec4056"}
+09_search_after_hybrid.json: total_found=1 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+09_search_after_semantic.json: total_found=1 strategy=semantic_only
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+10_q_agenda.json: total_found=2 strategy=hybrid
+    1.000 semantic  genesis-hackathon-agenda-2026  Genesis Mission Hackathon Agenda, 14-16 October 2026
+    0.806 semantic  genesis-hackathon-welcome-packet-2026  Genesis Mission Hackathon Welcome Packet, 14-16 October 2026
+10_q_archetypal.json: total_found=4 strategy=hybrid
+    0.500 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.500 semantic  MLIR_Affine_Annotator-xcard  MLIR Affine Annotator — spine v0.1
+    0.183 semantic  GCA-AI__Graphical_Contingency_Analysis_with_AI_-xcard  GCA-AI (Graphical Contingency Analysis with AI) — spine v0.1
+    0.166 semantic  Accelerate_Analyzer_Agent-xcard  Accelerate Analyzer Agent — spine v0.1
+10_q_jasper.json: total_found=2 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.540 semantic  APOLLO-xcard  APOLLO — spine v0.1
+10_q_nazca.json: total_found=2 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+    0.345 semantic  model-card_AI4GSD_PNNLRCSFA_YC-xcard  $ {AI4GSD} — spine v0.1
+10_q_panola.json: total_found=1 strategy=hybrid
+    1.000 semantic  emma-benchmark  EMMA Benchmark: unsupervised end-member extraction from geoscience mix
+[17:08:29 +149s] hands-on done; results in /home/jaywen/discovery-local/runs/7754425/out
+[17:08:29 +149s] done
+[17:08:29 +149s] teardown
+/home/jaywen/discovery-local/stage/dle_lib.sh: line 20: 1852977 Terminated              apptainer exec "${AX[@]}" "$@" > "$RUN/logs/$name.log" 2>&1
+/home/jaywen/discovery-local/stage/dle_lib.sh: line 20: 1853461 Terminated              apptainer exec "${AX[@]}" "$@" > "$RUN/logs/$name.log" 2>&1

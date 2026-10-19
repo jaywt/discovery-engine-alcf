@@ -1,0 +1,4 @@
+title: The Genesis Discovery Engine on ALCF Polaris
+description: The F4 Discovery Engine hands-on, run on an ALCF Polaris compute node with Apptainer, registering a data card for the EMMA benchmark.
+# Scripts, run outputs and the card are linked to their GitHub file views, not rendered by Jekyll.
+exclude: [runs, card, scripts, README.md]
