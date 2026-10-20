@@ -183,6 +183,8 @@ uv run --with httpx scripts/iri_submit.py fetch /home/you/discovery-local/runs/<
 
 The first run also pulls the Playwright image (about 0.7 GB) and installs the matching `playwright` package. `--no-shots` skips both.
 
+This exact sequence, from a fresh checkout, was run as job 7762868 on 19 October (another node, the same results, 123 s).
+
 From a Polaris login node the scripts also run without IRI, as a PBS job:
 
 ```bash
