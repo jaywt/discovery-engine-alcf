@@ -1,0 +1,50 @@
+[
+ {
+  "shot": "05_search_after",
+  "ok": true,
+  "note": "15 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | PISCES Extraction Agent \u2014 spine v0.1 | DAE-featured-ET-Prediction Model \u2014 spine v0.1 | Context-Aware Visual Prompting for Geospatial Decision Support (CAVP) \u2014 spine v0.1 | $ {AI4GSD} \u2014 spine v0.1 | APOLLO \u2014 spine v0.1",
+  "other_cards_redacted": 14
+ },
+ {
+  "shot": "06_card_detail",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 14
+ },
+ {
+  "shot": "07_card_relationships",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 14
+ },
+ {
+  "shot": "08_card_raw",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 14
+ },
+ {
+  "shot": "09_search_jasper",
+  "ok": true,
+  "note": "5 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | APOLLO \u2014 spine v0.1 | ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling \u2014 spine v0.1 | EZANA TDMS Data Preparation Agent \u2014 spine v0.1 | DeepINV3D \u2014 spine v0.1",
+  "other_cards_redacted": 4
+ },
+ {
+  "shot": "10_search_panola",
+  "ok": true,
+  "note": "31 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | ATSGENAI | Flow Battery Environmental Impact Analyst \u2014 spine v0.1 | Interfacer \u2014 spine v0.1 | Fe-S Cluster Redox Potential Prediction Model (VEA-MLP) \u2014 spine v0.1 | DAE-featured-ET-Prediction Model \u2014 spine v0.1",
+  "other_cards_redacted": 30
+ },
+ {
+  "shot": "11_workspace_palette",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 0
+ },
+ {
+  "shot": "12_create_card",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 0
+ }
+]

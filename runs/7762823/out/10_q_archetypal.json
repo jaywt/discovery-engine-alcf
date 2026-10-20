@@ -1,0 +1,37 @@
+{
+ "query": "archetypal analysis benchmark",
+ "results": [
+  {
+   "card_id": "MLIR_Affine_Annotator-xcard",
+   "title": "MLIR Affine Annotator \u2014 spine v0.1",
+   "card_type": "agent",
+   "relevance_score": 0.5,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "emma-benchmark",
+   "title": "EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures",
+   "card_type": "dataset",
+   "relevance_score": 0.5,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "GCA-AI__Graphical_Contingency_Analysis_with_AI_-xcard",
+   "title": "GCA-AI (Graphical Contingency Analysis with AI) \u2014 spine v0.1",
+   "card_type": "agent",
+   "relevance_score": 0.1846907,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "Accelerate_Analyzer_Agent-xcard",
+   "title": "Accelerate Analyzer Agent \u2014 spine v0.1",
+   "card_type": "agent",
+   "relevance_score": 0.16843046,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 4,
+ "strategy_used": "hybrid",
+ "provenance_id": "63d4e636-d204-4386-a5e4-45e6b8050c7a",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

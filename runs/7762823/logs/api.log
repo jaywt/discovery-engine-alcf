@@ -1,0 +1,100 @@
+/app/apps/api/routes/card_builder.py:226: UserWarning: Field name "register" in "WorkflowCardRequest" shadows an attribute in parent "BaseModel"
+  class WorkflowCardRequest(BaseModel):
+INFO:     Started server process [1849242]
+INFO:     Waiting for application startup.
+02:17:36 │ INFO     │ genesis                                  │ Genesis logging configured at INFO level
+02:17:36 │ INFO     │ genesis.knowledge._types                 │ Semantic index: OpenSearch (hybrid BM25 + kNN)
+02:17:36 │ INFO     │ genesis.knowledge._opensearch_index      │ Created OpenSearch index 'genesis-cards' (dim=384)
+02:17:54 │ INFO     │ genesis.knowledge._registry_source       │ xCard registry sync: 325 listed, 325 ingested, 0 skipped
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:18000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57998 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58002 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58008 - "GET /api/v1/cards?limit=5000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58034 - "GET /api/v1/cards?limit=5000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58036 - "GET /api/v1/cards?limit=5000 HTTP/1.1" 200 OK
+02:18:03 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=hybrid principal=anonymous
+02:18:03 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 5 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:58042 - "POST /api/v1/discover HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/card-builder/options HTTP/1.1" 200 OK
+02:18:07 │ INFO     │ genesis.practices._registry              │ Loaded 21 practices from /app/practices
+INFO:     127.0.0.1:0 - "GET /api/v1/practices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/settings/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/card-builder/options HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/practices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=dataset&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=dataset&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/settings/providers HTTP/1.1" 200 OK
+02:18:14 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=hybrid principal=anonymous
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=unsupervised+end-member+extraction+from+geoscience+mixtures&limit=50 HTTP/1.1" 200 OK
+02:18:14 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 100 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:0 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:32 │ INFO     │ genesis.knowledge._registry_source       │ xCard registry sync: 326 listed, 326 ingested, 0 skipped
+INFO:     127.0.0.1:58412 - "POST /api/v1/admin/resync HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56040 - "GET /api/v1/cards/emma-benchmark HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56056 - "GET /api/v1/cards?limit=5000 HTTP/1.1" 200 OK
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=hybrid principal=anonymous
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 1 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:56062 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=semantic_only principal=anonymous
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 1 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:56064 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=graph_only principal=anonymous
+02:18:32 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 0 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:56066 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='stream water chemistry end-member mixing analysis ...' strategy=hybrid principal=anonymous
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 1 results for query='stream water chemistry end-mem...'
+INFO:     127.0.0.1:56072 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='hyperspectral unmixing benchmark Jasper Ridge...' strategy=hybrid principal=anonymous
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 2 results for query='hyperspectral unmixing benchma...'
+INFO:     127.0.0.1:56074 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='archetypal analysis benchmark...' strategy=hybrid principal=anonymous
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 4 results for query='archetypal analysis benchmark...'
+INFO:     127.0.0.1:56082 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='marine sediment geochemistry Nazca Plate...' strategy=hybrid principal=anonymous
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 2 results for query='marine sediment geochemistry N...'
+INFO:     127.0.0.1:56088 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='when is the hackathon closing session...' strategy=hybrid principal=anonymous
+02:18:33 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 2 results for query='when is the hackathon closing ...'
+INFO:     127.0.0.1:56104 - "POST /api/v1/discover HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/card-builder/options HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/practices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/card-builder/options HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/practices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/settings/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=dataset&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=dataset&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/settings/providers HTTP/1.1" 200 OK
+02:18:40 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='unsupervised end-member extraction from geoscience...' strategy=hybrid principal=anonymous
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=unsupervised+end-member+extraction+from+geoscience+mixtures&limit=50 HTTP/1.1" 200 OK
+02:18:40 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 15 results for query='unsupervised end-member extrac...'
+INFO:     127.0.0.1:0 - "POST /api/v1/discover HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards/emma-benchmark HTTP/1.1" 200 OK
+02:18:47 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='hyperspectral unmixing benchmark Jasper Ridge...' strategy=hybrid principal=anonymous
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=hyperspectral+unmixing+benchmark+Jasper+Ridge&limit=50 HTTP/1.1" 200 OK
+02:18:47 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 5 results for query='hyperspectral unmixing benchma...'
+INFO:     127.0.0.1:0 - "POST /api/v1/discover HTTP/1.1" 200 OK
+02:18:50 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='stream water chemistry end-member mixing analysis ...' strategy=hybrid principal=anonymous
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=stream+water+chemistry+end-member+mixing+analysis+Panola&limit=50 HTTP/1.1" 200 OK
+02:18:50 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 31 results for query='stream water chemistry end-mem...'
+INFO:     127.0.0.1:0 - "POST /api/v1/discover HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards?limit=500 HTTP/1.1" 200 OK
+02:18:53 │ INFO     │ genesis.agents.discovery._agent          │ discover: query='end-member extraction...' strategy=hybrid principal=anonymous
+INFO:     127.0.0.1:0 - "GET /api/v1/catalog/search?q=dataset&limit=50 HTTP/1.1" 200 OK
+02:18:53 │ INFO     │ genesis.agents.discovery._agent          │ discover: found 24 results for query='end-member extraction...'
+INFO:     127.0.0.1:0 - "POST /api/v1/discover HTTP/1.1" 200 OK
+INFO:     127.0.0.1:0 - "GET /api/v1/cards/emma-benchmark HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1849242]

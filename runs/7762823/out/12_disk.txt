@@ -1,0 +1,3 @@
+2.1G	/home/jaywen/discovery-local/sif
+26M	/local/scratch/jaywen/dle/state
+1.3G	/local/scratch/jaywen/dle/sbx

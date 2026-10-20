@@ -1,0 +1,20 @@
+2026/10/20 02:17:55 [notice] 1849997#1849997: using the "epoll" event method
+2026/10/20 02:17:55 [notice] 1849997#1849997: nginx/1.31.7
+2026/10/20 02:17:55 [notice] 1849997#1849997: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/10/20 02:17:55 [notice] 1849997#1849997: OS: Linux 6.4.0-150700.53.73-default
+2026/10/20 02:17:55 [notice] 1849997#1849997: getrlimit(RLIMIT_NOFILE): 16384:16384
+2026/10/20 02:17:55 [notice] 1849997#1849997: start worker processes
+2026/10/20 02:17:55 [notice] 1849997#1849997: start worker process 1850026
+2026/10/20 02:17:55 [notice] 1849997#1849997: start worker process 1850027
+2026/10/20 02:18:59 [notice] 1849997#1849997: signal 15 (SIGTERM) received from 1849968, exiting
+2026/10/20 02:18:59 [notice] 1850026#1850026: exiting
+2026/10/20 02:18:59 [notice] 1850027#1850027: exiting
+2026/10/20 02:18:59 [notice] 1850026#1850026: exit
+2026/10/20 02:18:59 [notice] 1850027#1850027: exit
+2026/10/20 02:18:59 [notice] 1849997#1849997: signal 14 (SIGALRM) received
+2026/10/20 02:18:59 [notice] 1849997#1849997: signal 17 (SIGCHLD) received from 1850027
+2026/10/20 02:18:59 [notice] 1849997#1849997: worker process 1850027 exited with code 0
+2026/10/20 02:18:59 [notice] 1849997#1849997: signal 29 (SIGIO) received
+2026/10/20 02:18:59 [notice] 1849997#1849997: signal 17 (SIGCHLD) received from 1850026
+2026/10/20 02:18:59 [notice] 1849997#1849997: worker process 1850026 exited with code 0
+2026/10/20 02:18:59 [notice] 1849997#1849997: exit

@@ -1,0 +1,20 @@
+[
+ {
+  "shot": "02_workspace",
+  "ok": true,
+  "note": "",
+  "other_cards_redacted": 0
+ },
+ {
+  "shot": "03_explore_corpus",
+  "ok": true,
+  "note": "324 cards",
+  "other_cards_redacted": 324
+ },
+ {
+  "shot": "04_search_before",
+  "ok": true,
+  "note": "100 cards: PISCES Extraction Agent \u2014 spine v0.1 | DAE-featured-ET-Prediction Model \u2014 spine v0.1 | MIST \u2014 Mixtures (Excess Properties) \u2014 spine v0.1 | $ {AI4GSD} \u2014 spine v0.1 | NDSR \u2014 spine v0.1 | LLM Powered Industrial Data Extraction \u2014 spine v0.1",
+  "other_cards_redacted": 100
+ }
+]

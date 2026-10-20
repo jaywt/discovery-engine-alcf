@@ -1,0 +1,16 @@
+{
+ "query": "stream water chemistry end-member mixing analysis Panola",
+ "results": [
+  {
+   "card_id": "emma-benchmark",
+   "title": "EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures",
+   "card_type": "dataset",
+   "relevance_score": 1.0,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 1,
+ "strategy_used": "hybrid",
+ "provenance_id": "a9465e88-d12c-4675-ab4e-7b52db87cc9d",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

@@ -8,8 +8,9 @@ for the EMMA benchmark.
 
 | Path | What |
 |---|---|
-| `scripts/` | `dle_up.sh` (bring-up, hands-on, teardown), `dle_lib.sh` (pinned images, env, nginx), `dle_handson.sh` (register and search), `iri_submit.py` (submit through IRI) |
+| `scripts/` | `dle_up.sh` (images, model, repo, then the stack in a private network namespace), `dle_stack.sh` (bring-up, hands-on, screenshots, teardown), `dle_handson.sh` (register and search), `shots.py` (headless UI screenshots, redacted), `netns.py` + `nscheck.sh` (loopback-only namespace, no root), `dle_lib.sh` (pinned images, env, nginx), `iri_submit.py` (submit and fetch through IRI) |
 | `card/` | the EMMA benchmark data card, xCard export, as registered |
 | `runs/7754425/` | outputs and logs of the run on 2026-10-16, with the exact scripts that produced it |
+| `runs/7762823/` | the run on 2026-10-19 (US time): same hands-on, in a private network namespace, with UI screenshots in `shots/` |
 
 The stack itself is [AI-ModCon/discovery-local](https://github.com/AI-ModCon/discovery-local); its images are pulled from ghcr.io, not redistributed here.

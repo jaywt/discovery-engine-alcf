@@ -1,0 +1,8 @@
+shot 05_search_after: True 15 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | PISCES Extraction Agent — spine v0.1 | DAE-featured-ET-Prediction Model — spine v0.1 | Context-Aware Visual Prompting for Geospatial Decision Support (CAVP) — spine v0.1 | $ {AI4GSD} — spine v0.1 | APOLLO — spine v0.1
+shot 06_card_detail: True 
+shot 07_card_relationships: True 
+shot 08_card_raw: True 
+shot 09_search_jasper: True 5 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | APOLLO — spine v0.1 | ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling — spine v0.1 | EZANA TDMS Data Preparation Agent — spine v0.1 | DeepINV3D — spine v0.1
+shot 10_search_panola: True 31 cards: EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures | ATSGENAI | Flow Battery Environmental Impact Analyst — spine v0.1 | Interfacer — spine v0.1 | Fe-S Cluster Redox Potential Prediction Model (VEA-MLP) — spine v0.1 | DAE-featured-ET-Prediction Model — spine v0.1
+shot 11_workspace_palette: True 
+shot 12_create_card: True 

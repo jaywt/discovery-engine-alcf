@@ -1,0 +1,23 @@
+{
+ "query": "when is the hackathon closing session",
+ "results": [
+  {
+   "card_id": "genesis-hackathon-agenda-2026",
+   "title": "Genesis Mission Hackathon Agenda, 14-16 October 2026",
+   "card_type": "hackathon_materials",
+   "relevance_score": 1.0,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "genesis-hackathon-welcome-packet-2026",
+   "title": "Genesis Mission Hackathon Welcome Packet, 14-16 October 2026",
+   "card_type": "hackathon_materials",
+   "relevance_score": 0.80674654,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 2,
+ "strategy_used": "hybrid",
+ "provenance_id": "da856594-5420-4b3d-81f9-5362fb4f245e",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

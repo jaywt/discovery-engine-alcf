@@ -1,0 +1,43 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+
+  .-')              _   .-')                           .-. .-')  
+ ( OO ).           ( '.( OO )_                         \  ( OO ) 
+(_)---\_) .-----.   ,--.   ,--.).-'),-----.    .-----. ,--. ,--. 
+/    _ | /  -.   \  |   `.'   |( OO'  .-.  '  '  .--./ |  .'   / 
+\  :` `. '-' _'  |  |         |/   |  | |  |  |  |('-. |      /, 
+ '..`''.)   |_  <   |  |'.'|  |\_) |  |\|  | /_) |OO  )|     ' _)
+.-._)   \.-.  |  |  |  |   |  |  \ |  | |  | ||  |`-'| |  .   \  
+\       /\ `-'   /  |  |   |  |   `'  '-'  '(_'  '--'\ |  |\   \ 
+ `-----'  `----''   `--'   `--'     `-----'    `-----' `--' '--' 
+
+
+
+2026-10-20T02:17:15.465Z  INFO 1848564 --- [           main] c.a.testing.s3mock.S3MockApplication     : Starting S3MockApplication using Java 21.0.5 with PID 1848564 (/s3mock.jar started by jaywen in /)
+2026-10-20T02:17:15.470Z  INFO 1848564 --- [           main] c.a.testing.s3mock.S3MockApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-10-20T02:17:16.578Z  INFO 1848564 --- [           main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9191
+2026-10-20T02:17:16.678Z  INFO 1848564 --- [           main] org.eclipse.jetty.server.Server          : jetty-12.0.12; built: 2024-07-25T21:58:37.668Z; git: cc6f1b74db755fed228b50701ad967aeaa68e83f; jvm 21.0.5+11-alpine-r0
+2026-10-20T02:17:16.712Z  INFO 1848564 --- [           main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2026-10-20T02:17:16.713Z  INFO 1848564 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1186 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-10-20T02:17:16.849Z  INFO 1848564 --- [           main] o.e.j.session.DefaultSessionIdManager    : Session workerName=node0
+2026-10-20T02:17:16.855Z  INFO 1848564 --- [           main] o.e.jetty.server.handler.ContextHandler  : Started osbwej.JettyEmbeddedWebAppContext@6d6bff89{application,/,b=file:/tmp/jetty-docbase.9191.4723921355792990890/,a=AVAILABLE,h=oeje10s.SessionHandler@541bf968{STARTED}}
+2026-10-20T02:17:16.855Z  INFO 1848564 --- [           main] o.e.j.e.servlet.ServletContextHandler    : Started osbwej.JettyEmbeddedWebAppContext@6d6bff89{application,/,b=file:/tmp/jetty-docbase.9191.4723921355792990890/,a=AVAILABLE,h=oeje10s.SessionHandler@541bf968{STARTED}}
+2026-10-20T02:17:16.863Z  INFO 1848564 --- [           main] org.eclipse.jetty.server.Server          : Started oejs.Server@5c887052{STARTING}[12.0.12,sto=0] @2726ms
+2026-10-20T02:17:16.870Z  INFO 1848564 --- [           main] c.a.t.s3mock.store.StoreConfiguration    : Using existing folder "/data" as root folder. Will retain files on exit: true
+2026-10-20T02:17:16.944Z  INFO 1848564 --- [           main] c.a.t.s3mock.store.StoreConfiguration    : Creating initial bucket xcards.
+2026-10-20T02:17:17.211Z  WARN 1848564 --- [           main] i.m.c.i.binder.jvm.JvmGcMetrics          : GC notifications will not be available because com.sun.management.GarbageCollectionNotificationInfo is not present
+2026-10-20T02:17:17.257Z  INFO 1848564 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-20T02:17:17.289Z  INFO 1848564 --- [           main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-20T02:17:17.289Z  INFO 1848564 --- [           main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-20T02:17:17.290Z  INFO 1848564 --- [           main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-20T02:17:17.297Z  INFO 1848564 --- [           main] o.e.jetty.util.ssl.SslContextFactory     : x509=X509@63db743d(selfsigned,h=[localhost, adobe s3mock],a=[],w=[]) for Server@496cedbb[provider=null,keyStore=null,trustStore=null]
+2026-10-20T02:17:17.383Z  INFO 1848564 --- [           main] o.e.jetty.server.AbstractConnector       : Started SslValidatingServerConnector@d504137{SSL, (ssl, http/1.1)}{127.0.0.1:9191}
+2026-10-20T02:17:17.386Z  INFO 1848564 --- [           main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@3a3ad8e7{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2026-10-20T02:17:17.388Z  INFO 1848564 --- [           main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on ports 9191 (ssl, http/1.1), 9090 (http/1.1) with context path '/'
+2026-10-20T02:17:17.400Z  INFO 1848564 --- [           main] c.a.testing.s3mock.S3MockApplication     : Started S3MockApplication in 2.336 seconds (process running for 3.262)
+2026-10-20T02:18:59.525Z  INFO 1848564 --- [ionShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped SslValidatingServerConnector@d504137{SSL, (ssl, http/1.1)}{127.0.0.1:9191}
+2026-10-20T02:18:59.526Z  INFO 1848564 --- [ionShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@3a3ad8e7{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2026-10-20T02:18:59.529Z  INFO 1848564 --- [ionShutdownHook] org.eclipse.jetty.server.Server          : Stopped oejs.Server@5c887052{STOPPING}[12.0.12,sto=0]
+2026-10-20T02:18:59.531Z  INFO 1848564 --- [ionShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-10-20T02:18:59.532Z  INFO 1848564 --- [ionShutdownHook] o.e.j.e.servlet.ServletContextHandler    : Stopped osbwej.JettyEmbeddedWebAppContext@6d6bff89{application,/,b=file:/tmp/jetty-docbase.9191.4723921355792990890/,a=AVAILABLE,h=oeje10s.SessionHandler@541bf968{STOPPED}}

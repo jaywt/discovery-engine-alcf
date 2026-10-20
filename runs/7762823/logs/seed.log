@@ -1,0 +1,8 @@
+seeded 323/330 cards into http://127.0.0.1:18100
+  skipped, no registry subtype: {'framework': 4, 'workflow': 1}
+  failed: 2
+    LLNL_LPBF.xcard.md: invalid_xcard The submitted Markdown is not a valid AgentCard.
+    morph_model-card.xcard.md: invalid_xcard The submitted Markdown is not a valid ModelCard.
+  genesis-hackathon-agenda-2026.md -> registry/resource_card/f0eb3d41-df9e-5e05-ae7b-b971b74310dd/versions/1-c43b0e2e-685f-5658-80af-348052d99ba4.md
+  genesis-hackathon-welcome-packet-2026.md -> registry/resource_card/a535eb15-1291-5bc7-b998-867c3dae503a/versions/1-a3c099f7-4265-5d33-af6b-446c41e3fd0d.md
+wrote 2 cards; resync the engine to index them

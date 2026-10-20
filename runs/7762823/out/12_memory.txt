@@ -1,0 +1,5 @@
+  1192 MB  /usr/share/opensearch/jdk/bin/java -Xshare:auto -Dopensearch.networkaddress.cache.ttl=60 -Dopensearch.network
+   531 MB  /opt/java-minimal/bin/java -Djava.security.egd=file:/dev/./urandom -XX:+UseZGC -XX:+ZGenerational -Xmx1g -jar
+   138 MB  /app/.venv/bin/python /app/.venv/bin/uvicorn hpdf_xcard_registry.registry_api:app --host 127.0.0.1 --port 181
+   422 MB  /opt/venv/bin/python /opt/venv/bin/uvicorn apps.api.main:app --host 127.0.0.1 --port 18000
+     6 MB  nginx: master process /usr/sbin/nginx -e stderr -c /local/scratch/jaywen/dle/state/ui/nginx.conf -g daemon of

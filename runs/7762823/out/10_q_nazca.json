@@ -1,0 +1,23 @@
+{
+ "query": "marine sediment geochemistry Nazca Plate",
+ "results": [
+  {
+   "card_id": "emma-benchmark",
+   "title": "EMMA Benchmark: unsupervised end-member extraction from geoscience mixtures",
+   "card_type": "dataset",
+   "relevance_score": 1.0,
+   "relevance_source": "semantic"
+  },
+  {
+   "card_id": "model-card_AI4GSD_PNNLRCSFA_YC-xcard",
+   "title": "$ {AI4GSD} \u2014 spine v0.1",
+   "card_type": "model",
+   "relevance_score": 0.34481397,
+   "relevance_source": "semantic"
+  }
+ ],
+ "total_found": 2,
+ "strategy_used": "hybrid",
+ "provenance_id": "97fc6a74-e5e2-4baa-8359-807f4a39bc6a",
+ "note": "Trimmed for publication: result descriptions and snippets removed."
+}

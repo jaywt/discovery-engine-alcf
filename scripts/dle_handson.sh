@@ -1,4 +1,4 @@
-# Sourced by dle_up.sh once the stack is up. The deck's hands-on, as API calls, saved to $O.
+# Sourced by dle_stack.sh once the stack is up. The deck's hands-on, as API calls, saved to $O.
 O=$RUN/out
 E=http://127.0.0.1:18000
 R=http://127.0.0.1:18100
@@ -8,6 +8,8 @@ J='Content-Type: application/json'
   echo "node: $(hostname)"; echo "date: $(date -Is)"; echo "job: $JOB"
   echo "apptainer: $(apptainer --version)"; echo "repo: AI-ModCon/discovery-local@$REPO_COMMIT"
   for k in s3 opensearch registry api ui; do echo "image $k: ${IMG[$k]}"; done
+  [ "$SHOTS" = 1 ] && echo "image pw (screenshots only): ${IMG[pw]}"
+  echo "network: $MODE"; echo "embedding model: $EMBED_MODEL"
   echo "card: $(basename "$CARD") sha256 $(sha256sum "$CARD" | cut -d' ' -f1)"
 } > "$O/00_versions.txt"
 ss -ltnH 2>/dev/null | awk '{print $4}' | grep -E ':(9090|9191|9200|9300|18000|18100|15173)$' | sort > "$O/01_listening.txt"
@@ -29,6 +31,7 @@ discover() {  # discover OUTFILE QUERY STRATEGY
 }
 Q1="unsupervised end-member extraction from geoscience mixtures"
 discover "$O/03_search_before_hybrid.json" "$Q1" hybrid
+take_shots before
 
 log "register $(basename "$CARD") as data_card"
 code=$(curl -s -o "$O/04_register_response.json" -w '%{http_code}' -X POST "$R/api/current/registry/data_card" \
@@ -52,6 +55,7 @@ discover "$O/10_q_jasper.json" "hyperspectral unmixing benchmark Jasper Ridge" h
 discover "$O/10_q_archetypal.json" "archetypal analysis benchmark" hybrid
 discover "$O/10_q_nazca.json" "marine sediment geochemistry Nazca Plate" hybrid
 discover "$O/10_q_agenda.json" "when is the hackathon closing session" hybrid
+take_shots after
 
 { curl -s -o /dev/null -w 'ui / %{http_code}\n' http://127.0.0.1:15173/
   curl -s -o /dev/null -w "ui /api/v1/cards/$CARD_ID %{http_code}\n" "http://127.0.0.1:15173/api/v1/cards/$CARD_ID"; } > "$O/11_ui_http_code.txt"
